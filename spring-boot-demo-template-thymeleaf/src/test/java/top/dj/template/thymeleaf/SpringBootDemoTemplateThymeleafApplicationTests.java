@@ -1,10 +1,10 @@
-package top.dj;
+package top.dj.template.thymeleaf;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemosApplicationTests {
+class SpringBootDemoTemplateThymeleafApplicationTests {
 
     @Test
     void contextLoads() {
