@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="background-color:#ECECEC; padding: 35px;">
+    <table cellpadding="0" align="center"
+           style="width: 600px; margin: 0px auto; text-align: left; position: relative; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; font-size: 14px; font-family:微软雅黑, 黑体; line-height: 1.5; box-shadow: rgb(153, 153, 153) 0px 0px 5px; border-collapse: collapse; background-position: initial initial; background-repeat: initial initial;background:#fff;">
+        <tbody>
+        <tr>
+            <th valign="middle"
+                style="height: 25px; line-height: 25px; padding: 15px 35px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #42a3d3; background-color: #49bcff; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">
+                <font face="微软雅黑" size="5" style="color: rgb(255, 255, 255); ">消息推送通知</font>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <div style="padding:25px 35px 40px; background-color:#fff;">
+                    <h2 th:text="'Hi ' + ${paramMap.get('NAME')}" style="margin: 5px 0px; ">
+                        <font color="#333333" style="line-height: 20px; ">
+                            <font style="line-height: 22px; " size="4">
+                                Hi</font>
+                        </font>
+                    </h2>
+
+                    <div th:text="'您收到一条' + ${paramMap.get('TYPE')} + '消息通知！'"
+                         style="padding:0 10px 10px;border-bottom:1px solid #ccc;color:#747474;margin-bottom:20px;line-height:1.3em;font-size:15px;">
+                        您收到一条消息通知！
+                    </div>
+
+                    <div th:each="dataMap:${dataMap}" style="padding:0 10px 10px;">
+                        <span th:text="${dataMap.key} + '：'" style="color: #747474;">key：</span>
+                        <span th:text="${dataMap.value}" style="color: #49bcff;font-weight: bold;">value</span>
+                    </div>
+
+                    <p align="right">KEMUCH</p>
+                    <p align="right" th:text="${paramMap.get('DATE')}">yyyy/MM/dd HH:mm:ss</p>
+                    <div style="width:700px;margin:0 auto;">
+                        <div style="padding:10px 10px 0;border-top:1px solid #ccc;color:#747474;margin-bottom:20px;line-height:1.3em;font-size:12px;">
+                            <p>
+                                此为系统邮件，请勿回复<br>
+                                请保管好您的邮箱，避免账号被他人盗用
+                            </p>
+                            <p>©***</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

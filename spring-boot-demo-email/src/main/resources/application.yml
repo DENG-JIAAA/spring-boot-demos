@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: email
+  mail:
+    host: smtp.163.com # 指定发送邮件的主机smtp.qq.com(QQ)|smtp.163.com(网易)
+    protocol: smtp # 协议
+    default-encoding: UTF-8 # 邮件编码
+    username: 18402894534@163.com
+    password: ZQWDZBGHQWGIGXXJ
+  thymeleaf:
+    mode: HTML5 # 模板的模式，支持：html、xml、text、javascript
+    cache: false # 开发设置模板缓存为false，页面不产生缓存，这样修改html页面后刷新浏览器能马上看到结果
+    prefix: classpath:/templates/ # 配置模板路径，默认为templates
+    suffix: .html # 模板后缀
+    encoding: UTF-8 # 编码
