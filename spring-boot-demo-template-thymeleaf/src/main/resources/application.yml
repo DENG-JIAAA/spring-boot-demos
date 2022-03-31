@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: thymeleaf
+
   thymeleaf: # https://blog.csdn.net/ice_lemon_g/article/details/73609020
     cache: false # 是否启用模板缓存（开发时建议关闭）
     mode: HTML5 # 应用于模板的模板模式

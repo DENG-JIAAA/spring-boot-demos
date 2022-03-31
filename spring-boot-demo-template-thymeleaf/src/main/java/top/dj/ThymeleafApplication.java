@@ -1,4 +1,4 @@
-package top.dj.template.thymeleaf;
+package top.dj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,10 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
-public class SpringBootDemoTemplateThymeleafApplication {
+public class ThymeleafApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDemoTemplateThymeleafApplication.class, args);
+        SpringApplication.run(ThymeleafApplication.class, args);
     }
 
 }

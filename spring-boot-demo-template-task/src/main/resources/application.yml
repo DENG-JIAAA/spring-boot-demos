@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: task
+  task:
+    scheduling:
+      pool:
+        size: 20
+      thread-name-prefix: Job-Thread-
+
