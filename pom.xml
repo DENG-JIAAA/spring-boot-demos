@@ -18,10 +18,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>demo-helloworld</module>
+        <module>demo-properties</module>
         <module>demo-email</module>
         <module>demo-task</module>
         <module>demo-template-thymeleaf</module>
-        <module>demo-helloworld</module>
     </modules>
 
     <properties>
