@@ -3,6 +3,7 @@ package top.dj.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.TemplateEngine;
@@ -21,10 +22,10 @@ public class ThymeleafController {
     @Autowired
     private TemplateEngine templateEngine;
 
-    @GetMapping("/")
-    public String thymeleaf() {
+    @GetMapping("/{name}")
+    public String thymeleaf(@PathVariable("name") String name) {
         Context context = new Context();
-        context.setVariable("NAME", " DENG-JIAAA ");
+        context.setVariable("NAME", name);
         return templateEngine.process("emailTemplate", context);
     }
 }

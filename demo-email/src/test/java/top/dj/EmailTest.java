@@ -28,6 +28,8 @@ class EmailTest {
     @Autowired
     private JavaMailSender javaMailSender;
 
+    // TODO 改为从数据库读取配置进行邮件发送
+
     @Test
     void simple() {
         simpleMailMessage.setTo("2663239386@qq.com");

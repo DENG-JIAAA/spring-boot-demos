@@ -4,9 +4,9 @@ server:
 spring:
   application:
     name: task
-  task:
-    scheduling:
-      pool:
-        size: 20
-      thread-name-prefix: Job-Thread-
+#  task: # 等同于 TaskConfig 配置类的配置
+#    scheduling:
+#      pool:
+#        size: 20
+#      thread-name-prefix: Job-Thread-
 
