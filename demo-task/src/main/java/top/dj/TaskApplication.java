@@ -10,10 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
-public class SpringBootDemoTemplateTaskApplication {
+public class TaskApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDemoTemplateTaskApplication.class, args);
+        SpringApplication.run(TaskApplication.class, args);
     }
 
 }
